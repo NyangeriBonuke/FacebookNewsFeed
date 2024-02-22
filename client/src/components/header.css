@@ -1,0 +1,179 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+}
+
+.searchsection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section2{
+    display: flex;
+    align-items: center;
+    gap: 50px;   
+}
+
+.section3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(235, 235, 241);
+    padding: 10px 20px 10px 10px;
+    border-radius: 20px;
+}
+
+.searchinput{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+.fblogo{
+    font-size: 40px;
+    color: rgb(1, 101, 225);
+}
+
+.navlogo{
+    font-size: 28px;
+    color: hsl(0, 0%, 0%);
+    position: absolute;
+}
+
+.navlogo.active{
+    color: rgb(1, 101, 225);
+}
+
+.navlogo2{
+    background-color: rgb(235, 235, 241);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navlogo2:hover{
+    background-color: rgb(228, 228, 230);
+}
+
+.logolink{
+    width: 100px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.logolink:hover{
+    background-color: rgb(235, 235, 241);
+}
+
+.homehover{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 8px;
+    display: none;
+}
+
+.logolink:hover + .homehover, .homehover:hover{
+    display: block;
+}
+
+.homehovermarket{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 8px;
+    display: none;
+}
+
+.logolink:hover + .homehovermarket, .homehovermarket:hover{
+    display: block;
+}
+
+.section3hover{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: -4px;
+    margin-top: 12px;
+    display: none;
+}
+
+.navlogo2:hover + .section3hover, .section3hover:hover{
+    display: block;
+}
+
+.section3hoverwell{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: -18px;
+    margin-top: 12px;
+    display: none;
+}
+
+.navlogo2:hover + .section3hoverwell, .section3hoverwell:hover{
+    display: block;
+}
+
+.searchdiv{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(184, 183, 183);
+}
+
+.searchback{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back{
+    font-size: 30px;
+}
+
+.backarrow{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.backarrow:hover{
+    background-color: rgb(235, 235, 241);
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.namesearched{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
