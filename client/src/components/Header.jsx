@@ -11,8 +11,7 @@ import { BsMenuButtonWide } from "react-icons/bs";
 import { BsChat } from "react-icons/bs";
 import { BsBell } from "react-icons/bs";
 import { BsBank } from "react-icons/bs";
-import { BsArrowLeftShort } from "react-icons/bs";
-import image1 from '../assets/images/OIP.jpg'
+import Search from './Search';
 
 const Header = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false)
@@ -37,21 +36,7 @@ const Header = () => {
           
         { isSearchVisible && (
           <div className='searchdiv'>
-            <div className='searchback'>
-              <div onClick={toggleSearch} className='backarrow'> 
-                <BsArrowLeftShort className='back' />
-              </div>
-              <div className='search'>
-                <input type='text' placeholder='Search Facebook' className='searchinput' />
-              </div>
-            </div>
-            <div className='namesearched'>
-              <img className='image' alt='profilepicture' src={image1} />
-              <div>
-                <p>Steven Bonuke</p>
-                <p>Friend</p>
-              </div>
-            </div>
+            <Search isSearchVisible={isSearchVisible} setIsSearchVisible={setIsSearchVisible} />
           </div>
         )
         }
